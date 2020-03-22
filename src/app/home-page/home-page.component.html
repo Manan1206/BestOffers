@@ -2,17 +2,17 @@
     <div class="selection-menu">
         <mat-card>
             <div class="flex-even">
-                <div class="slider">
-                    <mat-label>Price (in ₹) &nbsp;</mat-label>
-                    <mat-slider min="0" max="200000" step="500" thumbLabel ngModel="maxPrice"></mat-slider>
+                <!-- <div class="slider"> -->
+                    <!-- <mat-label>Price (in ₹) &nbsp;</mat-label> -->
+                    <!-- <mat-slider min="0" max="200000" step="500" thumbLabel ngModel="maxPrice"></mat-slider> -->
                     <!-- <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider> -->
-                </div>
+                <!-- </div> -->
 
                 <mat-form-field>
-                    <mat-label>Products</mat-label>
+                    <mat-label>Categories</mat-label>
                     <mat-select>
-                        <mat-option *ngFor="let product of productsList" [value]="product">
-                            {{product}}
+                        <mat-option *ngFor="let category of categoriesList" [value]="category">
+                            {{category}}
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
@@ -20,4 +20,8 @@
             </div>
         </mat-card>
     </div>
+</section>
+
+<section class="section2">
+    <app-product *ngFor="let product of productsList"></app-product>
 </section>

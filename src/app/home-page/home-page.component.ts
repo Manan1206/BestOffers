@@ -8,7 +8,8 @@ import { Options, LabelType } from 'ng5-slider';
 })
 export class HomePageComponent implements OnInit {
 
-  productsList = ['Processor', 'RAM', 'Mouse', 'Keyboard']
+  categoriesList = ['Processor', 'RAM', 'Mouse', 'Keyboard']
+  productsList = ['i5', 'i3', 'i7']
   maxPrice: number = 0;
   
   minValue: number = 0;

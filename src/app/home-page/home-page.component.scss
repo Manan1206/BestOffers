@@ -5,6 +5,7 @@ mat-slider{
     height: 30vh;
     background-image: url('src/assets/bgImages/processor.jpg');
     position: relative;
+    background-size: cover;
     .selection-menu{
         background-color: white;
         position: absolute;
@@ -20,4 +21,8 @@ mat-slider{
             }
         }
     }
+}
+
+.section2{
+    margin-top: 100px
 }
