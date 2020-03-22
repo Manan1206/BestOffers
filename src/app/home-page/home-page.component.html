@@ -1,0 +1,23 @@
+<section class="section1">
+    <div class="selection-menu">
+        <mat-card>
+            <div class="flex-even">
+                <div class="slider">
+                    <mat-label>Price (in ₹) &nbsp;</mat-label>
+                    <mat-slider min="0" max="200000" step="500" thumbLabel ngModel="maxPrice"></mat-slider>
+                    <!-- <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider> -->
+                </div>
+
+                <mat-form-field>
+                    <mat-label>Products</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let product of productsList" [value]="product">
+                            {{product}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+        </mat-card>
+    </div>
+</section>
